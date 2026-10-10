@@ -1,0 +1,61 @@
+# ============================================================
+#  Global Store — .gitignore
+# ============================================================
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# build output
+dist/
+dist-ssr/
+*.local
+
+# ---------- secrets: never commit ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# local databases (demo data / WAL)
+server/data/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.db-journal
+
+# uploads / exports
+uploads/
+exports/
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# caches
+.cache/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# editors & OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
