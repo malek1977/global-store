@@ -19,6 +19,7 @@ dist-ssr/
 *.pem
 *.key
 secrets.json
+.github-token
 
 # local databases (demo data / WAL)
 server/data/
